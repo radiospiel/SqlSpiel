@@ -24,7 +24,7 @@
 #import <dlfcn.h>
 #endif
 #import "GTMSQLite.h"
-#import "GTMMethodCheck.h"
+// #import "GTMMethodCheck.h"
 #import "GTMDefines.h"
 #include <limits.h>
 #import "GTMGarbageCollection.h"

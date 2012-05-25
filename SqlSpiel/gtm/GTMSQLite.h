@@ -99,7 +99,7 @@
 #endif
 
 #import <Foundation/Foundation.h>
-#import <sqlite3.h>
+#import "../sqlite/sqlite3.h"
 
 /// Wrapper for SQLite with release/retain semantics and CFString convenience features
 @interface GTMSQLiteDatabase : NSObject {
