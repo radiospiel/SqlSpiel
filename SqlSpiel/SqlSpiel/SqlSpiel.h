@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "GTMSQLite+SqlSpiel.h"
+
+#import "SqlDatabase.h"
+
 @interface SqlSpiel : NSObject
 
 @end

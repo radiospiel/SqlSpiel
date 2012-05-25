@@ -10,6 +10,10 @@
 		9D7E146D156FBDC500ED3A53 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E1469156FBDC500ED3A53 /* sqlite3.c */; };
 		9D7E146E156FBDC500ED3A53 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7E146A156FBDC500ED3A53 /* sqlite3.h */; };
 		9D7E146F156FBDC500ED3A53 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7E146B156FBDC500ED3A53 /* sqlite3ext.h */; };
+		9D7E1472156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7E1470156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.h */; };
+		9D7E1473156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E1471156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.m */; };
+		9D7E1476156FC0C100ED3A53 /* SqlDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7E1474156FC0C100ED3A53 /* SqlDatabase.h */; };
+		9D7E1477156FC0C100ED3A53 /* SqlDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E1475156FC0C100ED3A53 /* SqlDatabase.m */; };
 		9DC02AD9156FB7F2005B9454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AD8156FB7F2005B9454 /* Foundation.framework */; };
 		9DC02ADF156FB7F2005B9454 /* SqlSpiel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC02ADE156FB7F2005B9454 /* SqlSpiel.m */; };
 		9DC02AE7156FB7F2005B9454 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AE6156FB7F2005B9454 /* SenTestingKit.framework */; };
@@ -38,6 +42,10 @@
 		9D7E1469156FBDC500ED3A53 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		9D7E146A156FBDC500ED3A53 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		9D7E146B156FBDC500ED3A53 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		9D7E1470156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMSQLite+SqlSpiel.h"; sourceTree = "<group>"; };
+		9D7E1471156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMSQLite+SqlSpiel.m"; sourceTree = "<group>"; };
+		9D7E1474156FC0C100ED3A53 /* SqlDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlDatabase.h; sourceTree = "<group>"; };
+		9D7E1475156FC0C100ED3A53 /* SqlDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlDatabase.m; sourceTree = "<group>"; };
 		9DC02AD5156FB7F2005B9454 /* libSqlSpiel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSqlSpiel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC02AD8156FB7F2005B9454 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9DC02ADC156FB7F2005B9454 /* SqlSpiel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SqlSpiel-Prefix.pch"; sourceTree = "<group>"; };
@@ -123,9 +131,13 @@
 			children = (
 				9D7E1467156FBDC500ED3A53 /* sqlite */,
 				9DC02AFF156FB824005B9454 /* gtm */,
+				9D7E1470156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.h */,
+				9D7E1471156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.m */,
 				9DC02ADD156FB7F2005B9454 /* SqlSpiel.h */,
 				9DC02ADE156FB7F2005B9454 /* SqlSpiel.m */,
 				9DC02ADB156FB7F2005B9454 /* Supporting Files */,
+				9D7E1474156FC0C100ED3A53 /* SqlDatabase.h */,
+				9D7E1475156FC0C100ED3A53 /* SqlDatabase.m */,
 			);
 			path = SqlSpiel;
 			sourceTree = "<group>";
@@ -180,6 +192,8 @@
 				9DC02B0E156FB824005B9454 /* GTMSQLite.h in Headers */,
 				9D7E146E156FBDC500ED3A53 /* sqlite3.h in Headers */,
 				9D7E146F156FBDC500ED3A53 /* sqlite3ext.h in Headers */,
+				9D7E1472156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.h in Headers */,
+				9D7E1476156FC0C100ED3A53 /* SqlDatabase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +298,8 @@
 				9DC02ADF156FB7F2005B9454 /* SqlSpiel.m in Sources */,
 				9DC02B0F156FB824005B9454 /* GTMSQLite.m in Sources */,
 				9D7E146D156FBDC500ED3A53 /* sqlite3.c in Sources */,
+				9D7E1473156FBF1D00ED3A53 /* GTMSQLite+SqlSpiel.m in Sources */,
+				9D7E1477156FC0C100ED3A53 /* SqlDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

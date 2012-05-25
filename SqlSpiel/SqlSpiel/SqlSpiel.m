@@ -9,5 +9,4 @@
 #import "SqlSpiel.h"
 
 @implementation SqlSpiel
-
 @end
