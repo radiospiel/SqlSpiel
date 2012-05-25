@@ -18,6 +18,9 @@
 //  the License.
 //
 
+#if __has_feature(objc_arc)
+#error This file must be compiled with ARC disabled, as per http://code.google.com/p/google-toolbox-for-mac/wiki/ARC_Compatibility
+#endif
 
 #import <Foundation/Foundation.h>
 #if MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_4

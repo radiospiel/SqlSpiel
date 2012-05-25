@@ -29,7 +29,7 @@ static NSString* kUseArrayEnumeration = @"kUseArrayEnumeration";
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state 
-                                  objects:(id *)stackbuf 
+                                  objects:(id __unsafe_unretained *)stackbuf 
                                     count:(NSUInteger)len;
 {
   switch([self stepRow]) {
@@ -43,7 +43,7 @@ static NSString* kUseArrayEnumeration = @"kUseArrayEnumeration";
 
     state->state = 1;                             /* Apparently state must not be 0 ?? */
     state->itemsPtr = stackbuf;                   
-    state->mutationsPtr = (unsigned long*)self;  
+    state->mutationsPtr = (unsigned long*)(__bridge void*)self;  
     return 1;
   default:
     return 0;

@@ -55,14 +55,13 @@ static StatementType statementTypeForSql(NSString* sql)
     [obj finalizeStatement];
   }];
   
-  [cached_statements_ release]; cached_statements_ = nil;
+   cached_statements_ = nil;
   
   [uncacheable_statements_ enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     [obj finalizeStatement];
   }];
-  [uncacheable_statements_ release]; uncacheable_statements_ = nil;
+   uncacheable_statements_ = nil;
   
-  [super dealloc];
 }
 
 -(void) init_prepared_statements
@@ -365,11 +364,10 @@ static StatementType statementTypeForSql(NSString* sql)
                             utf8:(BOOL)useUTF8
                        errorCode:(int *)err
 {
-  return [[[SqlDatabase alloc]initWithPath: path 
+  return [[SqlDatabase alloc]initWithPath: path 
                            withCFAdditions: additions 
                                       utf8: useUTF8 
-                                 errorCode: err]
-          autorelease];
+                                 errorCode: err];
 }
 
 + (SqlDatabase*)databaseWithPath:(NSString *)path

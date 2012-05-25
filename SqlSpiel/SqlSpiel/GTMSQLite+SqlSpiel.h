@@ -12,7 +12,7 @@ typedef enum SqlSpielEnumerationPolicy {
 //
 // Implements the NSFastEnumeration protocol.
 -(NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state 
-                                 objects:(id *)stackbuf 
+                                 objects:(id __unsafe_unretained *)stackbuf 
                                    count:(NSUInteger)len;
 
 

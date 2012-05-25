@@ -25,7 +25,7 @@
 		9DC02B08156FB824005B9454 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC02B00156FB824005B9454 /* GTMDefines.h */; };
 		9DC02B09156FB824005B9454 /* GTMGarbageCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC02B01156FB824005B9454 /* GTMGarbageCollection.h */; };
 		9DC02B0E156FB824005B9454 /* GTMSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC02B06156FB824005B9454 /* GTMSQLite.h */; };
-		9DC02B0F156FB824005B9454 /* GTMSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC02B07156FB824005B9454 /* GTMSQLite.m */; };
+		9DC02B0F156FB824005B9454 /* GTMSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC02B07156FB824005B9454 /* GTMSQLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,7 +378,7 @@
 		9DC02AFA156FB7F2005B9454 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/SqlSpiel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SqlSpiel/SqlSpiel-Prefix.pch";
@@ -391,7 +391,7 @@
 		9DC02AFB156FB7F2005B9454 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/SqlSpiel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SqlSpiel/SqlSpiel-Prefix.pch";
