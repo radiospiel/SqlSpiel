@@ -48,29 +48,28 @@ static StatementType statementTypeForSql(NSString* sql)
 
 @implementation SqlDatabase
 
+@synthesize cached_statements, uncacheable_statements;
+
 -(void)dealloc
 {
   // finalize all prepared SQL statements.
-  [cached_statements_ enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+  [cached_statements enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
     [obj finalizeStatement];
   }];
   
-   cached_statements_ = nil;
+  self.cached_statements = nil;
   
-  [uncacheable_statements_ enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+  [uncacheable_statements enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     [obj finalizeStatement];
   }];
-   uncacheable_statements_ = nil;
   
+  self.uncacheable_statements = nil;
 }
 
 -(void) init_prepared_statements
 {
-  if(!cached_statements_)
-    cached_statements_ = [[NSMutableDictionary alloc]init];
-  
-  if(!uncacheable_statements_)
-    uncacheable_statements_ = [[NSMutableArray alloc]init];
+  self.cached_statements = [[NSMutableDictionary alloc]init];
+  self.uncacheable_statements = [[NSMutableArray alloc]init];
 }
 
 -(GTMSQLiteStatement*)uncachedPrepareStatement: (NSString*)sql
@@ -92,11 +91,9 @@ static StatementType statementTypeForSql(NSString* sql)
 
 -(GTMSQLiteStatement*)prepareStatement: (NSString*)sql
 {
-  [self init_prepared_statements];
-  
   GTMSQLiteStatement* statement;
   
-  statement = [cached_statements_ objectForKey:sql];
+  statement = [cached_statements objectForKey:sql];
   if(statement) return statement;
   
   statement = [self uncachedPrepareStatement: sql];
@@ -104,11 +101,11 @@ static StatementType statementTypeForSql(NSString* sql)
   
   if([self isCacheableStatement: sql]) {
     // NSLog(@"*** caching %@", sql);
-    [cached_statements_ setObject: statement forKey:sql];
+    [cached_statements setObject: statement forKey:sql];
   }
   else {
     // NSLog(@"*** not caching %@", sql);
-    [uncacheable_statements_ addObject: statement];
+    [uncacheable_statements addObject: statement];
   }
   
   return statement;
@@ -364,10 +361,13 @@ static StatementType statementTypeForSql(NSString* sql)
                             utf8:(BOOL)useUTF8
                        errorCode:(int *)err
 {
-  return [[SqlDatabase alloc]initWithPath: path 
-                           withCFAdditions: additions 
-                                      utf8: useUTF8 
-                                 errorCode: err];
+  SqlDatabase* db = [[SqlDatabase alloc]initWithPath: path 
+                                     withCFAdditions: additions 
+                                                utf8: useUTF8 
+                                           errorCode: err];
+                                           
+  [db init_prepared_statements];
+  return db;
 }
 
 + (SqlDatabase*)databaseWithPath:(NSString *)path

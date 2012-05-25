@@ -8,10 +8,10 @@
 
 #import "GTMSQLite.h"
 
-@interface SqlDatabase: GTMSQLiteDatabase {
-  NSMutableDictionary* cached_statements_;
-  NSMutableArray* uncacheable_statements_;
-}
+@interface SqlDatabase: GTMSQLiteDatabase
+
+@property (strong) NSMutableDictionary* cached_statements;
+@property (strong) NSMutableArray* uncacheable_statements;
 
 // returns an autorelese SqlDatabase
 + (SqlDatabase*)databaseWithPath:(NSString *)path
@@ -48,7 +48,7 @@
 
 // Execute a select and enumerate over the result set as arrays.
 //
-// for(NSDictionary* record in [db select: @"SELECT * FROM foo WHERE id > ? AND id < ?", @"a", @"b"]) {
+// for(NSArray* record in [db select: @"SELECT * FROM foo WHERE id > ? AND id < ?", @"a", @"b"]) {
 //   ..
 // }
 //
