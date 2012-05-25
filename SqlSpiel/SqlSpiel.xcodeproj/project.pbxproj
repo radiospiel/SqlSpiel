@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DC02AD9156FB7F2005B9454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AD8156FB7F2005B9454 /* Foundation.framework */; };
+		9DC02ADF156FB7F2005B9454 /* SqlSpiel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC02ADE156FB7F2005B9454 /* SqlSpiel.m */; };
+		9DC02AE7156FB7F2005B9454 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AE6156FB7F2005B9454 /* SenTestingKit.framework */; };
+		9DC02AE9156FB7F2005B9454 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AE8156FB7F2005B9454 /* UIKit.framework */; };
+		9DC02AEA156FB7F2005B9454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AD8156FB7F2005B9454 /* Foundation.framework */; };
+		9DC02AED156FB7F2005B9454 /* libSqlSpiel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC02AD5156FB7F2005B9454 /* libSqlSpiel.a */; };
+		9DC02AF3156FB7F2005B9454 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DC02AF1156FB7F2005B9454 /* InfoPlist.strings */; };
+		9DC02AF6156FB7F2005B9454 /* SqlSpielTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC02AF5156FB7F2005B9454 /* SqlSpielTests.m */; };
+		9DC02B08156FB824005B9454 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC02B00156FB824005B9454 /* GTMDefines.h */; };
+		9DC02B09156FB824005B9454 /* GTMGarbageCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC02B01156FB824005B9454 /* GTMGarbageCollection.h */; };
+		9DC02B0E156FB824005B9454 /* GTMSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC02B06156FB824005B9454 /* GTMSQLite.h */; };
+		9DC02B0F156FB824005B9454 /* GTMSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC02B07156FB824005B9454 /* GTMSQLite.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DC02AEB156FB7F2005B9454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC02ACC156FB7F2005B9454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC02AD4156FB7F2005B9454;
+			remoteInfo = SqlSpiel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DC02AD5156FB7F2005B9454 /* libSqlSpiel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSqlSpiel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC02AD8156FB7F2005B9454 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9DC02ADC156FB7F2005B9454 /* SqlSpiel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SqlSpiel-Prefix.pch"; sourceTree = "<group>"; };
+		9DC02ADD156FB7F2005B9454 /* SqlSpiel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlSpiel.h; sourceTree = "<group>"; };
+		9DC02ADE156FB7F2005B9454 /* SqlSpiel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlSpiel.m; sourceTree = "<group>"; };
+		9DC02AE5156FB7F2005B9454 /* SqlSpielTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqlSpielTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC02AE6156FB7F2005B9454 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9DC02AE8156FB7F2005B9454 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9DC02AF0156FB7F2005B9454 /* SqlSpielTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SqlSpielTests-Info.plist"; sourceTree = "<group>"; };
+		9DC02AF2156FB7F2005B9454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9DC02AF4156FB7F2005B9454 /* SqlSpielTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlSpielTests.h; sourceTree = "<group>"; };
+		9DC02AF5156FB7F2005B9454 /* SqlSpielTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlSpielTests.m; sourceTree = "<group>"; };
+		9DC02B00156FB824005B9454 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		9DC02B01156FB824005B9454 /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		9DC02B06156FB824005B9454 /* GTMSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSQLite.h; sourceTree = "<group>"; };
+		9DC02B07156FB824005B9454 /* GTMSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSQLite.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DC02AD2156FB7F2005B9454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC02AD9156FB7F2005B9454 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC02AE1156FB7F2005B9454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC02AE7156FB7F2005B9454 /* SenTestingKit.framework in Frameworks */,
+				9DC02AE9156FB7F2005B9454 /* UIKit.framework in Frameworks */,
+				9DC02AEA156FB7F2005B9454 /* Foundation.framework in Frameworks */,
+				9DC02AED156FB7F2005B9454 /* libSqlSpiel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DC02ACA156FB7F2005B9454 = {
+			isa = PBXGroup;
+			children = (
+				9DC02ADA156FB7F2005B9454 /* SqlSpiel */,
+				9DC02AEE156FB7F2005B9454 /* SqlSpielTests */,
+				9DC02AD7156FB7F2005B9454 /* Frameworks */,
+				9DC02AD6156FB7F2005B9454 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DC02AD6156FB7F2005B9454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02AD5156FB7F2005B9454 /* libSqlSpiel.a */,
+				9DC02AE5156FB7F2005B9454 /* SqlSpielTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DC02AD7156FB7F2005B9454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02AD8156FB7F2005B9454 /* Foundation.framework */,
+				9DC02AE6156FB7F2005B9454 /* SenTestingKit.framework */,
+				9DC02AE8156FB7F2005B9454 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DC02ADA156FB7F2005B9454 /* SqlSpiel */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02AFF156FB824005B9454 /* gtm */,
+				9DC02ADD156FB7F2005B9454 /* SqlSpiel.h */,
+				9DC02ADE156FB7F2005B9454 /* SqlSpiel.m */,
+				9DC02ADB156FB7F2005B9454 /* Supporting Files */,
+			);
+			path = SqlSpiel;
+			sourceTree = "<group>";
+		};
+		9DC02ADB156FB7F2005B9454 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02ADC156FB7F2005B9454 /* SqlSpiel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DC02AEE156FB7F2005B9454 /* SqlSpielTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02AF4156FB7F2005B9454 /* SqlSpielTests.h */,
+				9DC02AF5156FB7F2005B9454 /* SqlSpielTests.m */,
+				9DC02AEF156FB7F2005B9454 /* Supporting Files */,
+			);
+			path = SqlSpielTests;
+			sourceTree = "<group>";
+		};
+		9DC02AEF156FB7F2005B9454 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02AF0156FB7F2005B9454 /* SqlSpielTests-Info.plist */,
+				9DC02AF1156FB7F2005B9454 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DC02AFF156FB824005B9454 /* gtm */ = {
+			isa = PBXGroup;
+			children = (
+				9DC02B00156FB824005B9454 /* GTMDefines.h */,
+				9DC02B01156FB824005B9454 /* GTMGarbageCollection.h */,
+				9DC02B06156FB824005B9454 /* GTMSQLite.h */,
+				9DC02B07156FB824005B9454 /* GTMSQLite.m */,
+			);
+			path = gtm;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9DC02AD3156FB7F2005B9454 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC02B08156FB824005B9454 /* GTMDefines.h in Headers */,
+				9DC02B09156FB824005B9454 /* GTMGarbageCollection.h in Headers */,
+				9DC02B0E156FB824005B9454 /* GTMSQLite.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9DC02AD4156FB7F2005B9454 /* SqlSpiel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC02AF9156FB7F2005B9454 /* Build configuration list for PBXNativeTarget "SqlSpiel" */;
+			buildPhases = (
+				9DC02AD1156FB7F2005B9454 /* Sources */,
+				9DC02AD2156FB7F2005B9454 /* Frameworks */,
+				9DC02AD3156FB7F2005B9454 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SqlSpiel;
+			productName = SqlSpiel;
+			productReference = 9DC02AD5156FB7F2005B9454 /* libSqlSpiel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9DC02AE4156FB7F2005B9454 /* SqlSpielTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC02AFC156FB7F2005B9454 /* Build configuration list for PBXNativeTarget "SqlSpielTests" */;
+			buildPhases = (
+				9DC02AE0156FB7F2005B9454 /* Sources */,
+				9DC02AE1156FB7F2005B9454 /* Frameworks */,
+				9DC02AE2156FB7F2005B9454 /* Resources */,
+				9DC02AE3156FB7F2005B9454 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC02AEC156FB7F2005B9454 /* PBXTargetDependency */,
+			);
+			name = SqlSpielTests;
+			productName = SqlSpielTests;
+			productReference = 9DC02AE5156FB7F2005B9454 /* SqlSpielTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DC02ACC156FB7F2005B9454 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = n/a;
+			};
+			buildConfigurationList = 9DC02ACF156FB7F2005B9454 /* Build configuration list for PBXProject "SqlSpiel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9DC02ACA156FB7F2005B9454;
+			productRefGroup = 9DC02AD6156FB7F2005B9454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DC02AD4156FB7F2005B9454 /* SqlSpiel */,
+				9DC02AE4156FB7F2005B9454 /* SqlSpielTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DC02AE2156FB7F2005B9454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC02AF3156FB7F2005B9454 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DC02AE3156FB7F2005B9454 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DC02AD1156FB7F2005B9454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC02ADF156FB7F2005B9454 /* SqlSpiel.m in Sources */,
+				9DC02B0F156FB824005B9454 /* GTMSQLite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC02AE0156FB7F2005B9454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC02AF6156FB7F2005B9454 /* SqlSpielTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DC02AEC156FB7F2005B9454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DC02AD4156FB7F2005B9454 /* SqlSpiel */;
+			targetProxy = 9DC02AEB156FB7F2005B9454 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DC02AF1156FB7F2005B9454 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DC02AF2156FB7F2005B9454 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DC02AF7156FB7F2005B9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9DC02AF8156FB7F2005B9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DC02AFA156FB7F2005B9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/SqlSpiel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqlSpiel/SqlSpiel-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9DC02AFB156FB7F2005B9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/SqlSpiel.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqlSpiel/SqlSpiel-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9DC02AFD156FB7F2005B9454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqlSpiel/SqlSpiel-Prefix.pch";
+				INFOPLIST_FILE = "SqlSpielTests/SqlSpielTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9DC02AFE156FB7F2005B9454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SqlSpiel/SqlSpiel-Prefix.pch";
+				INFOPLIST_FILE = "SqlSpielTests/SqlSpielTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DC02ACF156FB7F2005B9454 /* Build configuration list for PBXProject "SqlSpiel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC02AF7156FB7F2005B9454 /* Debug */,
+				9DC02AF8156FB7F2005B9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC02AF9156FB7F2005B9454 /* Build configuration list for PBXNativeTarget "SqlSpiel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC02AFA156FB7F2005B9454 /* Debug */,
+				9DC02AFB156FB7F2005B9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC02AFC156FB7F2005B9454 /* Build configuration list for PBXNativeTarget "SqlSpielTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC02AFD156FB7F2005B9454 /* Debug */,
+				9DC02AFE156FB7F2005B9454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DC02ACC156FB7F2005B9454 /* Project object */;
+}
