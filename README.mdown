@@ -1,0 +1,21 @@
+This project wraps the Sqlite sources from Googles Toolbox for Mac project into
+a CocoaPod. ALong the way it comes with its own bundled Sqlite sources, adds an
+IMHO nicer Objective-C interface, is opinioned about ARC (yes, we use it), and
+should work nicely with RubyMotion.
+
+# Integrated 3rd party source code.
+
+# google-toolbox-for-mac source code
+
+GTMSQLite and related GTM sources are taken from revision 534 of
+http://code.google.com/p/google-toolbox-for-mac/. 
+This code is licensed under the terms of the "Apache License, Version 2.0". See the file
+COPYING.gtm for more information.
+
+    svn checkout -r 534 http://google-toolbox-for-mac.googlecode.com/svn/trunk/ google-toolbox-for-mac-read-only
+
+
+# Sqlite source code
+
+The Sqlite source code is taken from the almagamation 3.7.12.1. This code is placed into the public domain
+by its authors; see http://www.sqlite.org/copyright.html for details.
